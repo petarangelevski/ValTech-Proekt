@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './HomePage.css';
-
+import './Modal/Modal.css'
 
 function HomePage() {
     const [item, setItem] = useState([]);
@@ -17,6 +17,8 @@ function HomePage() {
         };
         fetchData();
       }, []);
+      let navigate = useNavigate();
+
 
       const toggleModal = () => {
         setModal(!modal)
@@ -28,19 +30,26 @@ function HomePage() {
                             return ( 
                                 <>
                                 <div className='images__homepage_card' key={data.id}>
-                                <a className='link' href={`/image/${data.id}`}>
-                                    <img className='images__homepage' src={data.download_url} alt="" />
+                                
+                                    <img onClick={((e) => navigate(`/image/${data.id}`))} className='images__homepage' src={data.download_url} alt="" />
                                 <button onClick={toggleModal} className='hiden'>
                                 <span className="delete__button">ADD TO ALBUM</span>
                                 </button>
-                                </a>
+                                
                                 {modal && (<div className="modal">
                                     <div className="hoverlay">
-                                        <div className="modal-content">
-                                            <h2>w</h2>
-                                            <p>w</p>
-                                            <button onClick={toggleModal}>close</button>
-                                            <button>save</button>
+                                        <div className="modal__content">
+                                            <div className="modal__headings">
+                                                <p className='p1'>create new album</p>
+                                                <p className="p2">Add to existing</p>
+                                            </div>
+
+                                                <p className='album__title'>Enter title here</p>
+
+                                            <div className="modal__buttons">
+                                            <button className='cancel__button' onClick={toggleModal}><span className="button1__text">cancel</span></button>
+                                            <button className='save__button'><span className="button2__text">save</span></button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>)}

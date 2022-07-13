@@ -1,24 +1,13 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./HomePage.css";
 import "./Album.css";
+import gsap from "gsap";
 function Album() {
   const [item, setItem] = useState([]);
-  const [itemImage, setItemImage] = useState();
-  const [style, setStyle] = useState({ display: "none" });
-  const [show_Hide, setShowHide] = useState('1');
 
-  const letToggle = () => {
- 
-    if (show_Hide === '1') {
-      setShowHide('0');
 
-    } else {
-      setShowHide('1');
-
-    }
-  }
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
@@ -35,9 +24,21 @@ function Album() {
     let path = `/homepage`;
     navigate(path);
   };
-  const removeImage= () => {
 
+  const boxRef = useRef();
+  const [active, setActive] = useState(true);
+  
+  const removeItem = (value) => {
+    setItem(prev => prev.filter(item => item !== value));
   }
+  
+  const remove = (item, target) => {
+    gsap.to(target, {
+      opacity: 0,
+      onComplete: () => removeItem(item)
+    });
+  };
+ 
   return (
     <div className="album">
       <div className="album__heading">
@@ -49,8 +50,8 @@ function Album() {
           return (
             <>
               <div className='image__album__card' key={data.id}>
-                <img key={data.id} className={`images__album`} src={data.download_url} style={{opacity: show_Hide}} alt="" />
-                <button className="hide" onClick={letToggle} ><span className="delete__button">remove</span></button>
+                <img key={data.id}  className={`images__album`} src={data.download_url} alt="" onClick={(e) => remove(item, e.currentTarget)}/>
+                <button className="hide"><span className="delete__button">remove</span></button>
               </div>
             </>
           );

@@ -159,3 +159,6 @@
     color: #FFFFFF;
     opacity: 1;
   }
+  .delete__button:active  .images__album{
+        opacity: 0;
+  }
