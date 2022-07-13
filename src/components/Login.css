@@ -1,0 +1,132 @@
+.login__page {
+    top: 0px;
+    left: 0px;
+    height: 1080px;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.login__page__heading {
+    top: 160px;
+    left: 570px;
+    width: 780px;
+    color: var(--black);
+    text-align: center;
+    letter-spacing: NaNpx;
+    color: #000000;
+    opacity: 1;
+}
+.login__page__form {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.login__form__username{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.login__form__username input{
+    top: 308px;
+    left: 797px;
+    width: 327px;
+    height: 48px;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border: 2px solid var(--black);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #000000;
+    opacity: 1;
+}
+
+.login__form__password{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.login__form__password input{
+    top: 308px;
+    left: 797px;
+    width: 327px;
+    height: 48px;
+    background: var(--white) 0% 0% no-repeat padding-box;
+    border: 2px solid var(--black);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #000000;
+    opacity: 1;
+}
+.login__heading1 {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) 44px/28px var(--unnamed-font-family-lexend-deca);
+    color: var(--black);
+    text-align: center;
+    font: normal normal 800 44px/28px Lexend Deca;
+    letter-spacing: -2.2px;
+    color: #000000;
+}
+.login__heading2 {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 22px/28px var(--unnamed-font-family-lexend-deca);
+    color: var(--black);
+    text-align: center;
+    font: normal normal normal 22px/28px Lexend Deca;
+    letter-spacing: 0.44px;
+    color: #000000;
+}
+.login__page__form__button {
+    top: 509px;
+    left: 891px;
+    width: 140px;
+    height: 30px;
+    border: 2px solid var(--black);
+    background: #000000 0% 0% no-repeat padding-box;
+    border: 2px solid #000000;
+    opacity: 1;
+    color: white;
+}
+.button__text {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--black);
+    text-align: center;
+    font: normal normal 800 14px/18px Lexend Deca;
+    letter-spacing: 0px;
+    color: white;
+    opacity: 1;
+    margin: 0;
+}
+label {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-lexend-deca);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--black);
+    text-align: center;
+    font: normal normal 800 14px/18px Lexend Deca;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.login__page__footer {
+    top: 830px;
+    left: 0px;
+    height: 250px;
+    background: var(--black) 0% 0% no-repeat padding-box;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.footer__image {
+    position: absolute;
+    top: 101%;
+    left: 38%;
+    width: 625px;
+    height: 424px;
+    background: transparent url("../images/Vector.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}

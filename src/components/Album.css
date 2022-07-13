@@ -1,0 +1,161 @@
+.album {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    height: 1080px;
+    /* UI Properties */
+    background: var(--white) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+    flex-direction: column;
+}
+.images__album__container {
+    top: 220px;
+    left: 639px;
+    width: 642px;
+    height: auto;
+    opacity: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.images__album {
+    width: 190px;
+    height: 190px;
+    opacity: 1;
+    margin: 10px;
+}
+.album__p {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-32)/var(--unnamed-line-spacing-40) var(--unnamed-font-family-lexend-deca);
+    letter-spacing: var(--unnamed-character-spacing-0-64);
+    color: var(--black);
+    text-align: center;
+    font: normal normal normal 32px/40px Lexend Deca;
+    letter-spacing: 0.64px;
+    color: #000000;
+    opacity: 1;
+}
+.album__date {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-lexend-deca);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--grey);
+    text-align: center;
+    font: normal normal normal 14px/18px Lexend Deca;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+    opacity: 1;
+}
+.album__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 313px;
+}
+.album__button1{
+    top: 932px;
+    left: 822px;
+    width: 140px;
+    height: 30px;
+    border: 2px solid var(--black);
+    border: 2px solid #000000;
+    opacity: 1;
+}
+.album__button1:hover {
+    top: 932px;
+    left: 822px;
+    width: 140px;
+    height: 30px;
+    opacity: 1;
+    background-color: #000000;
+}
+.album__button1:hover .button1__text{
+    color: #FFFFFF;
+}
+.album__button2 {
+    color: #FFFFFF;
+    top: 932px;
+    left: 978px;
+    width: 140px;
+    height: 30px;
+    background: var(--black) 0% 0% no-repeat padding-box;
+    border: 2px solid var(--black);
+    background: #000000 0% 0% no-repeat padding-box;
+    border: 2px solid #000000;
+    opacity: 1;
+}
+.album__button2:hover {
+    background-color: whitesmoke;
+}
+.album__button2:hover .button2__text {
+    color: #000000;
+}
+.button1__text {
+    top: 938px;
+    left: 858px;
+    width: 66px;
+    height: 18px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-lexend-deca);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--black);
+    text-align: center;
+    text-transform: uppercase;
+    font: normal normal 800 14px/18px Lexend Deca;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.button2__text {
+    text-transform: uppercase;
+    top: 938px;
+    left: 1029px;
+    width: 36px;
+    height: 18px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-lexend-deca);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--black);
+    text-align: center;
+    font: normal normal 800 14px/18px Lexend Deca;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.images__album__card {
+    /* position: absolute; */
+    width: 100%;
+}
+.removed {
+    display: none;
+}
+.hide {
+    text-transform: uppercase;
+    position: relative;
+    left: 4.85%;
+    top: -17.5%;
+    display: none;
+    overflow: hidden;
+  }
+  
+  .images__album:hover + .hide {
+    display: block;
+    width: 190px;
+    height: 30px;
+    background: #EA5D4B 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  .delete__button {
+    top: 386px;
+    left: 703px;
+    width: 62px;
+    height: 18px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-lexend-deca);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--white);
+    text-align: left;
+    font: normal normal 800 14px/18px Lexend Deca;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }

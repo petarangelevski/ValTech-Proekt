@@ -1,0 +1,17 @@
+.login__page__footer {
+    top: 830px;
+    left: 0px;
+    height: 250px;
+    background: var(--black) 0% 0% no-repeat padding-box;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.footer__image {
+    position: absolute;
+    top: 101%;
+    left: 38%;
+    width: 625px;
+    height: 424px;
+    background: transparent url("../images/Vector.png") 0% 0% no-repeat padding-box;
+    opacity: 1;
+}

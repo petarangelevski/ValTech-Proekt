@@ -1,0 +1,91 @@
+.images__homepage_card {
+    grid-column: span 4 / auto;
+    width: 416px;
+    height: 500px;
+}
+.images__homepage{
+    width: 100%;
+    height: 100%;
+}
+.images__homepage__container {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 56px;
+    display: grid;
+}
+.HomePage {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin-top: 50px;
+}
+.hiden {
+    position: relative;
+    display: none;
+    top: -13.5%;
+    left: 0;
+    width: 416px;
+    height: 63px;
+    background: var(--black) 0% 0% no-repeat padding-box;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  
+.images__homepage:hover + .hiden {
+    position: relative;
+    display: inline-block;
+    top: -13.5%;
+    left: 0;
+    width: 416px;
+    height: 63px;
+    background: var(--black) 0% 0% no-repeat padding-box;
+    background: #000000 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .hoverlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.hoverlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
